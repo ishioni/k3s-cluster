@@ -21,7 +21,7 @@ metadata:
   name: quadrant-media
 spec:
   accessModes:
-  - ReadWriteMany
+    - ReadWriteMany
   resources:
     requests:
       storage: 4000Gi
