@@ -68,10 +68,10 @@ spec:
         mountPath: "/downloads"
         subPath: Downloads
     volumeClaimTemplates:
-    - accessMode: ReadWriteOnce
-      mountPath: /config
-      name: config
-      size: 100Mi
+      - accessMode: ReadWriteOnce
+        mountPath: /config
+        name: config
+        size: 100Mi
     ingress:
       main:
         enabled: true
@@ -80,11 +80,11 @@ spec:
           nginx.ingress.kubernetes.io/whitelist-source-range: "${INGRESS_IP_WHITELIST}"
           cert-manager.io/cluster-issuer: "letsencrypt-production"
         hosts:
-        - host: "torrent.${SECRET_DOMAIN}"
-          paths:
-          - path: /
-            pathType: Prefix
+          - host: "torrent.${SECRET_DOMAIN}"
+            paths:
+              - path: /
+                pathType: Prefix
         tls:
-        - secretName: "torrent.${SECRET_DOMAIN}"
-          hosts:
-          - "torrent.${SECRET_DOMAIN}"
+          - secretName: "torrent.${SECRET_DOMAIN}"
+            hosts:
+              - "torrent.${SECRET_DOMAIN}"
