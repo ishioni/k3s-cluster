@@ -21,6 +21,8 @@ spec:
     resources:
       limits:
         memory: 2500Mi
+      requests:
+        memory: 2000Mi
     securityContext:
       runAsUser: 1000
       fsGroup: 1000
