@@ -4,3 +4,4 @@ resources:
   - ingress.yaml
   - storage.yaml
   - reverse-proxy.yaml
+  - media.yaml
