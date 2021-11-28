@@ -30,6 +30,10 @@ spec:
       TZ: "Europe/Warsaw"
       TUNE_VIRTUALIZED: true
       ENABLE_ROLLING_LOGS: true
+    persistence:
+      dataDir:
+        enabled: true
+        existingClaim: minecraft-data
     minecraftServer:
       eula: true
       version: 1.17.1
