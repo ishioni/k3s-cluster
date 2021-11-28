@@ -10,7 +10,7 @@ spec:
   accessModes:
     - ReadWriteMany
   persistentVolumeReclaimPolicy: Retain
-  storageClassName: nfs-static
+  storageClassName: nfs
   nfs:
     path: /mnt/HDD/Media
     server: "${TRUENAS_IP}"
@@ -25,6 +25,6 @@ spec:
   resources:
     requests:
       storage: 4000Gi
-  storageClassName: nfs-static
+  storageClassName: nfs
   volumeMode: Filesystem
   volumeName: quadrant-media
