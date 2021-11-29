@@ -69,9 +69,9 @@ spec:
       annotations:
         cert-manager.io/cluster-issuer: letsencrypt-production
       tls:
-      - secretName: "cloud.${SECRET_DOMAIN}"
-        hosts:
-        - "cloud.${SECRET_DOMAIN}"
+        - secretName: "cloud.${SECRET_DOMAIN}"
+          hosts:
+            - "cloud.${SECRET_DOMAIN}"
     nginx:
       enabled: true
       config:
