@@ -45,7 +45,7 @@ spec:
       version: 1.18.2
       type: PAPER
       difficulty: normal
-      whitelist: "GachouGoose,Felix_Black,Rzezikozik,gorzyga,Star_Rider,movi,MicroGachou,TheBoarKnight,Glithhh,ChrisTomo,Almethai,czarny_jobacz"
+      whitelist: "GachouGoose,Felix_Black,Rzezikozik,gorzyga,Star_Rider,movi,MicroGachou,TheBoarKnight,Glithhh,Almethai,czarny_jobacz"
       ops: "movi,GachouGoose,czarny_jobacz"
       pvp: true
       motd: Meh
